@@ -87,6 +87,12 @@ export class Mindmodel{
                         save1 = JSON.parse(localStorage.getItem("save"));
                         section2.innerHTML =''
                         insert(save1)
+                        //redefining the container element
+                        recordscontainer = document.querySelectorAll('#recordscontainer');
+                        ///////////////////////////////////////////
+                        //setting user action on clicking each record
+                        edit(recordscontainer)
+                        clear.style.opacity = '50%'
                     }
 
                 })
